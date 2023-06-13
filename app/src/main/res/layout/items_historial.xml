@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
+    android:backgroundTint="#DDDDDD">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:id="@+id/txtPuntaje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="Puntaje: 0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/txtJuego"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Juego: Adivinando" />
+            
+            <View
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/txtTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Tiempo: 30s" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

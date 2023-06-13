@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.adivinando.AdivinandoActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:id="@+id/textTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="30 \n Segundos" />
+
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="15dp"
+        android:textAlignment="textEnd"
+        android:id="@+id/txtIntentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Tienes 3 intentos" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlyNumSelect"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNumSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa un número" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/btnLanzarNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Número" />
+
+
+</LinearLayout>

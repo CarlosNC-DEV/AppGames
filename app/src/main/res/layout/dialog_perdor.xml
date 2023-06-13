@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perdistes" />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Sigue intentando tu puedes!" />
+
+    <Button
+        android:id="@+id/btnJugarNuevamente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jugar Nuevamente" />
+
+
+    <Button
+        android:id="@+id/btnIrInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir Inicio" />
+
+</LinearLayout>

@@ -7,14 +7,68 @@
     tools:context=".ui.home.historial.HistorialActivity"
     android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvHistorialAdivinando"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvHistorialStropper"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Historial Juego Adivinando" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvHistorialAdivinando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Historial Juego Stropper" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvHistorialStropper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Historial Juego Cartas" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvHistorialCartas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

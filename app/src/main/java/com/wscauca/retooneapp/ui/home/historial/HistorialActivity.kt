@@ -32,6 +32,11 @@ class HistorialActivity : AppCompatActivity() {
         rcvHistorialStropper.layoutManager =  LinearLayoutManager(this)
         rcvHistorialStropper.adapter  = HistorialAdapter(resulStropper)
 
+        val resulCartas = managerHelperDb.historialFound(preferencias.getIdUsuario(), "Cartas")
+        val rcvHistorialCartas = binding.rcvHistorialCartas
+        rcvHistorialCartas.layoutManager =  LinearLayoutManager(this)
+        rcvHistorialCartas.adapter  = HistorialAdapter(resulCartas)
+
 
 
     }
